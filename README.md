@@ -1,16 +1,8 @@
-URL-to-MP4-Extractor
-
-Electron-based desktop application that wraps a CLI media extraction engine with a GUI, validation, and graceful failure handling.
-
-Supports many common media sources, but correctly fails on unsupported or protected platforms without attempting bypasses. Not every website or stream can be extracted by design.
-
-⸻
-
-HOW TO RUN THE APPLICATION
+How to Run the Application
 
 Prerequisites
 
-Before running the application, ensure the following are installed:
+Before running the application, make sure the following are installed:
 	•	Node.js (version 18 or newer recommended)
 	•	npm (included with Node.js)
 	•	Python 3
@@ -43,7 +35,7 @@ package.json   App configuration
 Installation
 	1.	Clone the repository:
 
-git clone https://github.com/WillWoods2021/URL-to-MP4-Extractor.git
+git clone https://github.com/ParanoidAndroid404/URL-to-MP4-Extractor.git
 cd URL-to-MP4-Extractor
 	2.	Install dependencies:
 
@@ -67,7 +59,7 @@ Usage Instructions
 	3.	Optional settings:
 	•	Enable “Convert to MP4” if re-encoding is needed
 	•	Enable “Use browser cookies” for supported sites
-	4.	Click “List Formats” to view available streams.
+	4.	Click “List Formats” to check available streams.
 	5.	Click “Download MP4”.
 
 ⸻
@@ -87,5 +79,5 @@ you must involve the original author.
 
 Contact
 
-GitHub: https://github.com/WillWoods2021
+GitHub: https://github.com/ParanoidAndroid404
 Email: paranoid_android404.dev@proton.me
