@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>URL → MP4 Downloader</title>pyr
+  <style>
+    body { font-family: Arial, sans-serif; margin: 16px; }
+    h3 { margin: 0 0 8px; }
+    label { display: block; margin-top: 8px; }
+    input[type="text"] { width: 100%; padding: 6px; box-sizing: border-box; }
+    button { margin-top: 8px; padding: 6px 10px; cursor: pointer; }
+    #download { background: #1f6aa5; color: white; }
+    #output { 
+      height: calc(100vh - 280px);
+      min-height: 220px;
+    }
+    .row { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+    select { padding: 4px; }
+    .muted { color: #666; }
+  </style>
+</head>
+<body>
+  <h3>URL → MP4 Downloader</h3>
+
+  <label for="url">Video URL:</label>
+  <input id="url" type="text" placeholder="https://example.com/video" />
+
+  <div class="row">
+    <button id="choose">Choose Save Location</button>
+    <span id="savePath" class="muted">Not selected</span>
+  </div>
+
+  <div class="row">
+    <label><input type="checkbox" id="recode" /> Convert to MP4 (re-encode if needed)</label>
+  </div>
+
+  <div class="row">
+    <label><input type="checkbox" id="useCookies" /> Use browser cookies</label>
+    <select id="browser" aria-label="Browser">
+      <option value="chrome">chrome</option>
+      <option value="edge">edge</option>
+      <option value="firefox">firefox</option>
+      <option value="opera">opera</option>
+      <option value="brave">brave</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <button id="chooseCookies">Choose cookies.txt</button>
+    <span id="cookiesPath" class="muted">No cookies file</span>
+  </div>
+
+  <div class="row">
+    <button id="list">List Formats</button>
+    <button id="download">Download MP4</button>
+  </div>
+
+  <div id="output" role="region" aria-label="Log output"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

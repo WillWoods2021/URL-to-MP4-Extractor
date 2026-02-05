@@ -1,0 +1,12 @@
+{
+  "name": "url_to_mp4_converter",
+  "version": "1.0.0",
+  "description": "URL → MP4 Downloader GUI (Electron + yt-dlp)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
